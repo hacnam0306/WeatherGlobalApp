@@ -1,0 +1,21 @@
+.header__avatar {
+  background: #b1dedb;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.header__search {
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius:20px;
+  background-color: #F8EEE2;
+  &__input,
+  &__button {
+    outline: none;
+    border: none;
+    background-color:transparent;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.menu {
+  display: flex;
+  
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}

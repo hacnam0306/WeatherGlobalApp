@@ -1,0 +1,139 @@
+@mixin card__weather($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@mixin card($background) {
+  background: $background;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:5px 20px;
+  letter-spacing: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-top: 5px;
+  p {
+    font-size: 12px;
+  }
+}
+.backgroundClouds {
+  @include card__weather("../../assets/card__weather.jpg");
+}
+.card__weather_2 {
+  @include card__weather("../../assets/card_weather_2.jpg");
+}
+.weather_icon {
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_white {
+  background: #fff;
+  display: inline-block;
+  height: 100%;
+  padding: 5px;
+  border-radius:12px; 
+  margin-left: 10px;
+}
+.background_green {
+  background: #cce16a;
+  display: inline-block;
+  height: 100%;
+  border-radius: 30%;
+  padding: 5px;
+
+  margin-left: 10px;
+}
+.card_1 {
+  @include card(#19283f);
+}
+.card_2 {
+  @include card(#cce16a);
+}
+.card_3 {
+  @include card(#ffffff);
+}
+.color_icon {
+  color: orange;
+}
+.wind_process {
+  background: #fff;
+  border-radius: 24px;
+  margin: 20px;
+  opacity: 0.8;
+}
+.progress_bar {
+  width: 100%;
+  height: 4px;
+  margin: 0 auto;
+  background: #eee;
+  position: relative;
+  &::before {
+    content: " ";
+    position: absolute;
+    background: linear-gradient(#f97f29, #f97f29) left no-repeat, white;
+    animation: toastProgress 4s steps(10, start);
+    left: 0;
+    width: 50%;
+    height: 4px;
+  }
+}
+@keyframes toastProgress {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.backgroundClear {
+  @include card__weather("../../assets/clear_weather.jpg");
+}
+.backgroundClearRight {
+  @include card__weather("../../assets/clear_right_weather.jpg");
+}
+
+.backgroundSnow {
+  @include card__weather("../../assets/snow_weather.jpg");
+}
+.backgroundRain {
+  @include card__weather(
+    "https://images.unsplash.com/photo-1556485689-33e55ab56127?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fHJhaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+  );
+}
+.dailyForecast {
+  background-color: #60dfcd;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(130, 205, 221, 1) 0%,
+    rgba(255, 247, 153, 1) 90%
+  );
+  border-radius: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.tomorrow {
+  @include card__weather("../../assets/tommorrow.jpg");
+  letter-spacing: 1px;
+}
+.backgroundCloudRight {
+  @include card__weather("../../assets/cloud_right_weather.jpg");
+}
+.backgroundSnowRight {
+  @include card__weather("../../assets/snow_right_weather.jpg");
+}
+.mainBoard {
+  height: 100vh;
+
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;1,300;1,400;1,500;1,600&display=swap");
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  user-select: none;
+  letter-spacing: 1px;
+}
+html {
+  font-size: 80.5%;
+  overflow-y: hidden;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(222, 168, 248, 1) 0%,
+    rgba(168, 222, 248, 1) 21.8%,
+    rgba(189, 250, 205, 1) 35.6%,
+    rgba(243, 250, 189, 1) 52.9%,
+    rgba(250, 227, 189, 1) 66.8%,
+    rgba(248, 172, 172, 1) 90%,
+    rgba(254, 211, 252, 1) 99.7%
+  );
+}
+.text-orange {
+  color: #f8822b;
+}
+.text-2 {
+  color: rgb(238, 247, 89);
+}
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+}
+.text-yellow {
+  color: rgb(20, 197, 216);
+}
+
+.active {
+  background-color: #f97f29;
+  color: #fff !important ;
+  padding: 16px;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  &:hover {
+    color: #fff !important;
+  }
+}
+a {
+  color: grey;
+  &:hover {
+    color: #f97f29;
+  }
+}
+.text-grey {
+  color: grey;
+}
+li {
+  list-style: none !important;
+  color: grey;
+}
+.activeSm {
+  background-color: #f97f29;
+  color: #fff !important ;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.modal-content {
+  border-radius: 20px !important;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-image: linear-gradient(#9cc0db, #e1effa);
+}
+.modal-title {
+  color: #282a35;
+  font-weight: bold;
+}
+.modal-body {
+  input {
+    border: none;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 0 10px 20px;
+    outline: none;
+  }
+}
+h4:nth-child(even) {
+  color: rgba(255, 206, 134, 1);
+}
+h4:nth-child(1) {
+  color: rgb(240, 33, 156);
+}
+h4:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: rgb(89, 134, 253);
+}
+.App {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(222, 168, 248, 1) 0%,
+    rgba(168, 222, 248, 1) 21.8%,
+    rgba(189, 250, 205, 1) 35.6%,
+    rgba(243, 250, 189, 1) 52.9%,
+    rgba(250, 227, 189, 1) 66.8%,
+    rgba(248, 172, 172, 1) 90%,
+    rgba(254, 211, 252, 1) 99.7%
+  );
+  height: 100vh;
+  animation: bg 30s infinite;
+  transition: 1s;
+}
+@keyframes bg {
+  25% {
+    background-image: linear-gradient(
+      359.8deg,
+      rgba(252, 255, 222, 1) 2.2%,
+      rgba(182, 241, 171, 1) 99.3%
+    );
+  }
+  30% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-image: linear-gradient(
+      64.3deg,
+      rgba(254, 122, 152, 0.81) 17.7%,
+      rgba(255, 206, 134, 1) 64.7%,
+      rgba(172, 253, 163, 0.64) 112.1%
+    );
+  }
+  55% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-image: linear-gradient(
+      109.6deg,
+      rgba(98, 210, 141, 0.88) 11.2%,
+      rgba(234, 245, 45, 0.79) 88%
+    );
+  }
+  80% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(222, 168, 248, 1) 0%,
+      rgba(168, 222, 248, 1) 21.8%,
+      rgba(189, 250, 205, 1) 35.6%,
+      rgba(243, 250, 189, 1) 52.9%,
+      rgba(250, 227, 189, 1) 66.8%,
+      rgba(248, 172, 172, 1) 90%,
+      rgba(254, 211, 252, 1) 99.7%
+    );
+  }
+  0% {
+    background-image: radial-gradient(
+      circle farthest-corner at 5.3% 17.2%,
+      rgba(255, 208, 253, 1) 0%,
+      rgba(255, 237, 216, 1) 90%
+    );
+  }
+}

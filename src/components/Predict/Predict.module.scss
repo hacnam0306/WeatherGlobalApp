@@ -1,0 +1,68 @@
+.line {
+  border-top: 1px solid #f7c7a3;
+  margin-top: 160px;
+  padding-top: 30px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 80%;
+    background-color: #f8eee2;
+    height: 180px; /* as the half of the width */
+    border-top-left-radius: 210px; /* 100px of height + 10px of border */
+    border-top-right-radius: 210px; /* 100px of height + 10px of border */
+    border: 2px dotted #fda446;
+    border-bottom: 0;
+  }
+}
+.banner {
+  background-color: #19283f;
+  color: #fff;
+  border-radius: 20px;
+  background-position: 30% 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  flex-wrap: nowrap;
+
+  .city_span {
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 20px;
+    background-color: #cce16a;
+    padding: 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+}
+.weather_predict_card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.predict {
+  height: 70vh;
+}
+.background_night {
+  background-image:url("https://img.freepik.com/free-vector/night-landscape-with-meadow-rural-field-road_107791-10960.jpg?size=626&ext=jpg&ga=GA1.2.407595722.1649582305");
+  color:#E5E6A5;
+  background-position: 10% 20%;
+
+}
+.background_day{
+ color:#97CE18;
+ background-image:url("https://img.freepik.com/free-vector/golf-course-nature-landscape-with-ball-grass_107791-1819.jpg?t=st=1649854185~exp=1649854785~hmac=06698c282796cb6ca97b8bbf061c7b48eb954849d785c9247233ee41cc8dd5a0&w=1060");
+ p{
+   color:    rgba(186, 8, 181, 1);
+ } 
+}
